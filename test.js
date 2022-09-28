@@ -1,4 +1,10 @@
 
+// API for get requests
+ fetch('https://462k64bxqd.execute-api.eu-west-2.amazonaws.com/Stage2/items')
+// fetchRes is the promise to resolve
+// it by using.then() method
+.then(response => response.json())
+.then(data => console.log(data));
 
 function details() {
     console.log(document.forms["visitor"]["serviceno"].value);
@@ -8,6 +14,14 @@ function details() {
     console.log(document.forms["visitor"]["pid"].value);
     
 }
+function displaylogs() {
+    console.log(document.forms["logs"]["entrydate"].value);
+    console.log(document.forms["logs"]["entrytime"].value);
+    console.log(document.forms["logs"]["exitdate"].value);
+    console.log(document.forms["logs"]["exittime"].value);
+
+}
+
 
 function find() {
     document.getElementById("initial-search").search();
