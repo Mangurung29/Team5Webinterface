@@ -11,11 +11,11 @@ Text domain: mytheme
     height: 100px;
     text-indent: 100px;    
     text-align: center;
-    color:white;
+    color:black;
     font-size: 50px;
     font-display:arial;
     font-weight: bold;
-    background-color: turquoise;
+    background-color: white;
   }
   .titleimage {
     opacity: 0.2;
