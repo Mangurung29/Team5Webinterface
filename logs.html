@@ -48,28 +48,20 @@
       </nav>
     </header>
 
-    <div class="container-fluid">
-    <script>
-     $(document).ready(function(){
-        $('#table_id').DataTable( {
-            ajax: {
-                url: 'https://462k64bxqd.execute-api.eu-west-2.amazonaws.com/Stage2/items',
-                dataSrc: 'Log.Items'
-               },
-               columns: [
-                    { data: 'Authorised Access?'},
-                    { data: 'Access Granted'},
-                    { data: 'DateTime'},
-                    { data: 'Service Number'},
-                    { data: 'ID Stamp'},
-                    { data: 'Surname'},
-                    { data: 'Building Number'}
-                ]
-            });
-        })
-    </script>
     
-    </div>
+     <!-- Here a loader is created which 
+             loads till response comes -->
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" 
+                 role="status" id="loading">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <h1>Access Logs</h1>
+        <!-- table for showing data -->
+        <table id="logs"></table>
+    
+    
     </body>
 
     </html>
