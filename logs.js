@@ -42,7 +42,7 @@ function show(data) {
          </tr>`;
     
     // Loop to access all rows 
-    for (let r of data.Items) {
+    for (let r of data.Items.reverse()) {
         tab += `<tr> 
     <td>${r.DateTime} </td>
     <td>${r.Surname}</td> 
