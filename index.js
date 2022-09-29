@@ -31,8 +31,7 @@ function show(data) {
           <th>Surname</th>
           <th>Service Number</th>
           <th>Exit On</th>
-          <th>Authorised</th>
-          
+          <th>Authorised</th>          
           <th>Building No.</th>
          </tr>`;
     
@@ -43,11 +42,10 @@ function show(data) {
     <td>${r.Surname}</td> 
     <td>${r["Service Number"]}</td>
     <td>${r["ID Stamp"]}</td>
-    <td>${r["Authorised Access?"]}</td>
-    
+    <td>${r["Authorised Access?"]}</td>    
     <td>${r.["Building Number"]}</td>
 </tr>`;
     }
     // Setting innerHTML as tab variable
-    document.getElementById("logs").innerHTML = tab;
+    document.getElementById("homelogs").innerHTML = tab;
 }
