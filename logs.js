@@ -47,11 +47,11 @@ function show(data) {
         tab += `<tr> 
     <td>${r.DateTime} </td>
     <td>${r.Surname}</td> 
-    <td>$["Service Number"]</td>
-    <td>$["ID Stamp"]</td>
-    <td>$["Authorised Access?"]</td>
-    <td>$["Access Granted"]</td>
-    <td>$["Building Number"]</td>
+    <td>${r.["Service Number"]}</td>
+    <td>${r.["ID Stamp"]}</td>
+    <td>${r.["Authorised Access?"]}</td>
+    <td>${r.["Access Granted"]}</td>
+    <td>${r.["Building Number"]}</td>
 </tr>`;
     }
     // Setting innerHTML as tab variable
