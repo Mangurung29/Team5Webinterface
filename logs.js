@@ -36,8 +36,8 @@ function show(data) {
           <th>Entry On</th>
           <th>Surname</th>
           <th>Service Number</th>
-          <th>Authorised</th>
-          <th>Access</th>
+          <th>ID Present</th>
+          <th>Building Access</th>
           <th>Building No.</th>
          </tr>`;
     
