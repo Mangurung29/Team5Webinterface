@@ -65,7 +65,3 @@ function details() {
 
 function find() {
     let x = document.getElementById("initial-search").value;
-}
-// if (x == "") {
-// alert("");
-// return false;
