@@ -10,7 +10,7 @@ fetch("https://462k64bxqd.execute-api.eu-west-2.amazonaws.com/Stage2/items").the
             temp += "<tr>";
             temp += "<td>" + itemData.Surname + "</td>";
             temp += "<td>" + itemData.DateTime + "</td>";
-                 </tr>";
+                 "</tr>";
           });
           document.getElementById('logs').innerHTML = temp;
         }
