@@ -1,6 +1,4 @@
 
-
-
 // api url
 const api_url = 
       "https://462k64bxqd.execute-api.eu-west-2.amazonaws.com/Stage2/items";
@@ -45,15 +43,22 @@ function show(data) {
     <td>${r.ServiceNumber} </td>
     <td>${r.surname}</td>
     <td>${r.DateTime}</td> 
-    <td>${r.ID Stamp}</td>  
-    <td>${r.Building Number}</td>
-    <td>${r.Access Granted}</td> 
-    <td>${r.Authorised Access?}</td> 
+    <td>${r.IDStamp}</td>  
+    <td>${r.BuildingNumber}</td>
+    <td>${r.AccessGranted}</td> 
+    <td>${r.AuthorisedAccess}</td> 
 </tr>`;
     }
     // Setting innerHTML as tab variable
     document.getElementById("logs").innerHTML = tab;
 }
+
+
+function find() {
+    document.getElementById("initial-search").search();
+}
+
+
 
 function details() {
     console.log(document.forms["visitor"]["serviceno"].value);
