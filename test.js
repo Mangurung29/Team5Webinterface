@@ -42,7 +42,7 @@ function show(data) {
     // Loop to access all rows 
     for (let r of data.list) {
         tab += `<tr> 
-    <td>${r.Service Number} </td>
+    <td>${r.ServiceNumber} </td>
     <td>${r.surname}</td>
     <td>${r.DateTime}</td> 
     <td>${r.ID Stamp}</td>  
