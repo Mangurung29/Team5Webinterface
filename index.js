@@ -29,10 +29,9 @@ function show(data) {
         `<tr>
           <th>Entry On</th>
           <th>Surname</th>
-          <th>Service Number</th>
-          <th>Exit On</th>
-          <th>Authorised</th>          
+          <th>Service Number</th>        
           <th>Building No.</th>
+          <th>Access</th>
          </tr>`;
     
     // Loop to access all rows 
@@ -41,9 +40,9 @@ function show(data) {
     <td>${r.DateTime} </td>
     <td>${r.Surname}</td> 
     <td>${r["Service Number"]}</td>
-    <td>${r["ID Stamp"]}</td>
-    <td>${r["Authorised Access?"]}</td>    
     <td>${r.["Building Number"]}</td>
+    <td>${r["Authorised Access?"]}</td>    
+   
 </tr>`;
     }
     // Setting innerHTML as tab variable
