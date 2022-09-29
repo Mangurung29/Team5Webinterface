@@ -33,15 +33,25 @@ function hideloader() {
 function show(data) {
     let tab = 
         `<tr>
-          <th>DateTime</th>
+          <th>Entry On</th>
           <th>Surname</th>
+          <th>Service Number</th>
+          <th>Exit On</th>
+          <th>Authorised</th>
+          <th>Access</th>
+          <th>Building No.</th>
          </tr>`;
     
     // Loop to access all rows 
     for (let r of data.Items) {
         tab += `<tr> 
     <td>${r.DateTime} </td>
-    <td>${r.Surname}</td>        
+    <td>${r.Surname}</td> 
+    <td>$["Service Number"]</td>
+    <td>$["ID Stamp"]</td>
+    <td>$["Authorised Access?"]</td>
+    <td>$["Access Granted"]</td>
+    <td>$["Building Number"]</td>
 </tr>`;
     }
     // Setting innerHTML as tab variable
