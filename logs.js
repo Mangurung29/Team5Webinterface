@@ -36,7 +36,6 @@ function show(data) {
           <th>Entry On</th>
           <th>Surname</th>
           <th>Service Number</th>
-          <th>Exit On</th>
           <th>Authorised</th>
           <th>Access</th>
           <th>Building No.</th>
@@ -48,7 +47,6 @@ function show(data) {
     <td>${r.DateTime} </td>
     <td>${r.Surname}</td> 
     <td>${r["Service Number"]}</td>
-    <td>${r["ID Stamp"]}</td>
     <td>${r["Authorised Access?"]}</td>
     <td>${r["Access Granted"]}</td>
     <td>${r["Building Number"]}</td>
