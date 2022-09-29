@@ -3,9 +3,9 @@ fetch("https://462k64bxqd.execute-api.eu-west-2.amazonaws.com/Stage2/items").the
     res.json().then(
       data => {
         console.log(data.data);
-        if (data.data.length > 0) {
+        //if (data.data.length > 0) {
 
-          var temp = "";
+          //var temp = "";
           data.data.forEach((itemData) => {
             temp += "<tr>";
             temp += "<td>" + itemData.Surname + "</td>";
