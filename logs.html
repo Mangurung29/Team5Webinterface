@@ -49,18 +49,26 @@
     </header>
 
     
-     <!-- Here a loader is created which 
-             loads till response comes -->
-        <div class="d-flex justify-content-center">
-            <div class="spinner-border" 
-                 role="status" id="loading">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <h1>Access Logs</h1>
-        <!-- table for showing data -->
-        <table id="logs"></table>
-    
+  <div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+          <th>Service Number</th>
+          <th>Surname</th>
+          <th>DateTime</th>
+          <th>ID Stamp</th>
+          <th>Building Number</th>
+          <th>Access Granted</th>
+          <th>Authorised Access?</th>
+       
+      </tr>
+    </thead>
+      
+    <tbody id="logs">
+
+    </tbody>
+  </table>
+</div>
     
     </body>
 
